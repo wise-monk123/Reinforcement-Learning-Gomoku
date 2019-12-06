@@ -53,6 +53,6 @@ The models (best_policy.model and current_policy.model) will be saved every a fe
 
 
 **Trainin Process**
-1. We started with a 6 * 6 board and 4 in a row, and obtained a reasonably good model within 500~1000 self-play games in about 2 hours.
-2. Afterwards, we trained the case of 8 * 8 board and 5 in a row, and obtained 2000~3000 self-play games to get a good model. It takes 1-2 days.
+1. We started with a 6 * 6 board and 4 in a row, and obtained a reasonably good model within 500~1000 self-play games in about 2 hours. (Saved policies in the files: best policy 6_6_4 model)
+2. Afterwards, we trained the case of 8 * 8 board and 5 in a row, and obtained 2000~3000 self-play games to get a good model. It takes 1-2 days. (Saved policies in the files: best policy 8_8_5 model)
 
