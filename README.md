@@ -16,11 +16,8 @@ To play with the trained AI models, only need:
 - Python >= 2.7
 - Numpy >= 1.11
 
-To train the AI model from scratch, further need, either:
-- Theano >= 0.7 and Lasagne >= 0.1      
-or
+To train the AI model from scratch，you need: 
 - PyTorch >= 0.2.0    
-or
 - TensorFlow
 
 
@@ -37,17 +34,7 @@ To train the AI model from scratch, with Theano and Lasagne, directly run:
 ```
 python train.py
 ```
-With PyTorch or TensorFlow, first modify the file [train.py](https://github.com/wise-monk123/Reinforcement_Learning-/blob/master/train.py), i.e., comment the line
-```
-from policy_value_net import PolicyValueNet  # Theano and Lasagne
-```
-and uncomment the line 
-```
-# from policy_value_net_pytorch import PolicyValueNet  # Pytorch
-or
-# from policy_value_net_tensorflow import PolicyValueNet # Tensorflow
-```
-and then execute: ``python train.py``  (To use GPU in PyTorch, set ``use_gpu=True`` and use ``return loss.item(), entropy.item()`` in function train_step in policy_value_net_pytorch.py if your pytorch version is greater than 0.5)
+To use GPU in PyTorch, set ``use_gpu=True`` and use ``return loss.item(), entropy.item()`` in function train_step in policy_value_net_pytorch.py if your pytorch version is greater than 0.5)
 
 The models (best_policy.model and current_policy.model) will be saved every a few updates (default 50).  
 
