@@ -20,9 +20,6 @@ To train the AI model from scratch，you need:
 - PyTorch >= 0.2.0    
 - TensorFlow
 
-
-If you would like to train the model using other DL frameworks, you only need to rewrite policy_value_net.py.
-
 ### Implementation Steps
 To play with provided models, run the following script from the directory:  
 ```
