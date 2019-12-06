@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+#This is the main script to start the human vs computer game. 
 
 from __future__ import print_function
 import pickle
@@ -8,7 +9,7 @@ from mcts_pure import MCTSPlayer as MCTS_Pure
 from mcts_alphaZero import MCTSPlayer
 from policy_value_net_pytorch import PolicyValueNet  # Pytorch
 
-
+# initiate a human player. Keyboard input fomat has to be (x,x), x < 6 or 8 (6, 8 are the dimension of the board. We have trained both types of board.)
 class Human(object):
     """
     human player
@@ -53,11 +54,6 @@ def run():
         mcts_player = MCTSPlayer(best_policy.policy_value_fn,
                                  c_puct=5,
                                  n_playout=400)  # set larger n_playout for better performance
-
-        # uncomment the following line to play with pure MCTS 
-        # mcts_player = MCTS_Pure(c_puct=5, n_playout=1000)
-
-        # human player, input your move in the format: 2,3
         human = Human()
 
         # set start_player=0 for human first
