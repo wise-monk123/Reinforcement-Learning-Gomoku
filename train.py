@@ -13,7 +13,7 @@ from policy_value_net_pytorch import PolicyValueNet  # Pytorch
 
 class TrainPipeline():
     def __init__(self, init_model=None):
-        # params of the board and the game
+        # initiate the board, 6x6 and 4 pieces in a row
         self.board_width = 6
         self.board_height = 6
         self.n_in_row = 4
@@ -21,8 +21,8 @@ class TrainPipeline():
                            height=self.board_height,
                            n_in_row=self.n_in_row)
         self.game = Game(self.board)
-        # training params
-        self.learn_rate = 2e-3
+        # training parameters 
+        self.learn_rate = 2e-3 # learning rate is 0.002.
         self.lr_multiplier = 1.0  # adaptively adjust the learning rate based on KL
         self.temp = 1.0  # the temperature param
         self.n_playout = 400  # num of simulations for each move
