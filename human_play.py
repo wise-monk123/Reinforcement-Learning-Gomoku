@@ -9,7 +9,8 @@ from mcts_pure import MCTSPlayer as MCTS_Pure
 from mcts_alphaZero import MCTSPlayer
 from policy_value_net_pytorch import PolicyValueNet  # Pytorch
 
-# initiate a human player. Keyboard input fomat has to be (x,x), x < 6 or 8 (6, 8 are the dimension of the board. We have trained both types of board.)
+# initiate a human player. Keyboard input fomat has to be (x,x), x < 6 or 8 
+# 6, 8 are the dimension of the board. We have trained both types of board.
 class Human(object):
     """
     human player
