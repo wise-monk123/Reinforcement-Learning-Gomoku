@@ -1,4 +1,4 @@
-## AlphaZero-Gomoku
+## Gomoku: an Alpha Zero project 
 This is an implementation of the AlphaZero algorithm for playing the simple board game Gomoku (also called Gobang or Five in a Row) from pure self-play training. The game Gomoku is smilar as Tic-Tac-Toe, which is a game where both players trying to put their “X” or “O” symbol inside a 3 by 3 board. The player wins by having their symbol forming a connection with the length of 3. The connection can be either horizontal, vertical or diagonal. Gomoku is to form a length of 5 inside a 8 by 8 board.
 
 ## Key Reinforcement Learning Concepts Used in this project: 
