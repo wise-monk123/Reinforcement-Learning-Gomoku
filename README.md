@@ -21,6 +21,9 @@ To train the AI model from scratch，you need:
 - TensorFlow
 
 ### Implementation Steps
+
+We firstly trained 2 agents to play against each other and save their policy, then loaded the policy and make the agent to play against human.
+
 To play with provided models, run the following script from the directory:  
 ```
 python human_play.py  
