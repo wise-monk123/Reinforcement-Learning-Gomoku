@@ -30,7 +30,7 @@ python human_play.py
 ```
 You may modify human_play.py to try different provided models or the pure MCTS.
 
-To train the AI model from scratch, with Theano and Lasagne, directly run:   
+To train the AI model from scratch run:   
 ```
 python train.py
 ```
