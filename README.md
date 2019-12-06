@@ -7,15 +7,11 @@ This is an implementation of the AlphaZero algorithm for playing the simple boar
 - Markov decision process:  is a state diagram describing the states and actions of the agents and the environment. It also describes the probability of transition between each states and reward for each state.
 
 
-References:  
-1. AlphaZero: Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm
-2. AlphaGo Zero: Mastering the game of Go without human knowledge
-
 ### Example Games Between Trained Models
 - Each move with 400 MCTS playouts:  
 ![playout400](https://raw.githubusercontent.com/junxiaosong/AlphaZero_Gomoku/master/playout400.gif)
 
-### Requirements
+### Technical Requirements
 To play with the trained AI models, only need:
 - Python >= 2.7
 - Numpy >= 1.11
@@ -30,7 +26,7 @@ or
 
 If you would like to train the model using other DL frameworks, you only need to rewrite policy_value_net.py.
 
-### Getting Started
+### Implementation Steps
 To play with provided models, run the following script from the directory:  
 ```
 python human_play.py  
@@ -56,7 +52,7 @@ and then execute: ``python train.py``  (To use GPU in PyTorch, set ``use_gpu=Tru
 The models (best_policy.model and current_policy.model) will be saved every a few updates (default 50).  
 
 
-**Tips for training:**
-1. It is good to start with a 6 * 6 board and 4 in a row. For this case, we may obtain a reasonably good model within 500~1000 self-play games in about 2 hours.
-2. For the case of 8 * 8 board and 5 in a row, it may need 2000~3000 self-play games to get a good model, and it may take about 2 days on a single PC.
+**Trainin Process**
+1. We started with a 6 * 6 board and 4 in a row, and obtained a reasonably good model within 500~1000 self-play games in about 2 hours.
+2. Afterwards, we trained the case of 8 * 8 board and 5 in a row, and obtained 2000~3000 self-play games to get a good model. It takes 1-2 days.
 
