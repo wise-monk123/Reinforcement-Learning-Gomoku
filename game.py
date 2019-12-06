@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 
+#this file defines the game rules. 
 
 from __future__ import print_function
 import numpy as np
 
-
+#initiate a board 
 class Board(object):
     """board for the game"""
 
