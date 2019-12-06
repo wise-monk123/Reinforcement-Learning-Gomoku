@@ -1,5 +1,11 @@
 ## AlphaZero-Gomoku
-This is an implementation of the AlphaZero algorithm for playing the simple board game Gomoku (also called Gobang or Five in a Row) from pure self-play training. The game Gomoku is much simpler than Go or chess, so that we can focus on the training scheme of AlphaZero and obtain a pretty good AI model on a single PC in a few hours. 
+This is an implementation of the AlphaZero algorithm for playing the simple board game Gomoku (also called Gobang or Five in a Row) from pure self-play training. The game Gomoku is smilar as Tic-Tac-Toe, which is a game where both players trying to put their “X” or “O” symbol inside a 3 by 3 board. The player wins by having their symbol forming a connection with the length of 3. The connection can be either horizontal, vertical or diagonal. Gomoku is to form a length of 5 inside a 8 by 8 board.
+
+## Key Reinforcement Learning Concepts Used in this project: 
+- Monte Carlo Tree Search (MCTS): works similar to Adversarial Search covered in the previous section. The main difference is MCTS randomly choose a branch to go down rather than trying to iterate through all the branches. The algorithm then establishes a profile from the outcome from that branch.
+- Q-Learning: is the simplest form of Reinforcement Learning. The goal of Q-Learning is to learn a policy that optimizes the evaluated outcome of the agent.
+- Markov decision process:  is a state diagram describing the states and actions of the agents and the environment. It also describes the probability of transition between each states and reward for each state.
+
 
 References:  
 1. AlphaZero: Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm
