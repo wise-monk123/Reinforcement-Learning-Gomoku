@@ -21,7 +21,7 @@ class TrainPipeline():
                            height=self.board_height,
                            n_in_row=self.n_in_row)
         self.game = Game(self.board)
-        # training parameters 
+        # MCTS training parameters 
         self.learn_rate = 2e-3 # learning rate is 0.002.
         self.lr_multiplier = 1.0  # adaptively adjust the learning rate based on KL
         self.temp = 1.0  # the temperature param
