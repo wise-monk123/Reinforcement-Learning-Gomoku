@@ -89,6 +89,7 @@ To differentiate this project from typical game projects, we used neural network
 - Weight initialization: variance scaling initializer
 - Neural Network model version #1: First graph is to go first again random player; the second graph is to go second. 
 
+![model screen](https://github.com/wise-monk123/Reinforcement-Learning-Gomoku/blob/master/img/NN1.png)
  
 However, this neural network model didn’t return convincing result. After investigating various potential erroneous places, such as tweeking hyperparameters, we realized that the above hyperparameters value is not the primary cause of inaccuracy of the model. The main changes in the improved neural network version #2 is that the input is a 2 dimensional panes instead of 1 dimensional vector, and we added a greedy descent that decreases overtime since a player is not always having the best  move in real life. Here is a summary of the second neural network model built: 
  
@@ -104,5 +105,5 @@ However, this neural network model didn’t return convincing result. After inve
 Neural Network Model Version #2: 
 First graph is to go first again random player; the second graph is to go second. 
 
-
+![model screen](https://github.com/wise-monk123/Reinforcement-Learning-Gomoku/blob/master/img/NN2.png)
 
