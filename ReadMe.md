@@ -10,17 +10,17 @@ Samuel Yang
 This project is prepared for CMPE 297-99 instructed by Professor Jahan Ghofraniha.
 
 ## Table of Content:
-Executive Summary
-Background and Introduction
-Problem Statement
-Purpose/Motivation
-Differentiator/Contribution
-Methodology
-Implementation and Results
-Conclusions
-Appendix
-Notebook link
-References
+- Executive Summary
+- Background and Introduction
+- Problem Statement
+- Purpose/Motivation
+- Differentiator/Contribution
+- Methodology
+- Implementation and Results
+- Conclusions
+- Appendix
+- Notebook link
+- References
 
 ## Executive Summary:
 This project is an implementation of four models to enable computer to combat a human player in the Gomoku game (as known as five in a row). Key reinforcement learning concepts implemented in this project:
