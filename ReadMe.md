@@ -30,8 +30,11 @@ This project is an implementation of four models to enable computer to combat a 
 - Markov decision process
 
 We first studied how max min algorithm can be applied in the Gomuku games by drawing out the branches and leaves of all possible moves, and used greedy policy of selecting best move to implete this model. We evaluated the model results by playing 1000 games, and the result is satisfying as a non-artificial intelligence application. 
+
 Since mix max algorithm cannot handle players with other gaming strategies, we then applied Q-learning principle and built another model by saving the Q-learning score for all possible moves in the table with initial score assignment of 0.6. We evaluated the model by plotting multiple graphs with various order permutation and combination of random-move player, and min/max-move player combat against each other , and these graphs show Q-learning is an improved model. 
+
 However, given the 8x8 board Gomoku game’s large potential score computation (1.2688693e+89 combination of moves, and 3.4336838e+30 number of total states), Q learning’s scrore table is not efficient even though we used computer cache to save the score for each state/move pair so that the computation happens only once. To resolve this inefficiency issue, we developed our next neural network model by feeding a one dimension vector data into tensor flow. This significantly improves the training time since Tensor topology doesn’t require saving the table data like Q-learning model. After evaluating the neural network model version #1, it seems the training outcome is not great compared to the pure min-max algorithm model and Q learning model. 
+
 Finally, we improved the neural network model version #1 by using 2 dimensional pane as input data and adding a greedy decentent since in real life the board game environment is a flat 2 dimensional space, and a player is not 100% of the time making best possible move. We used ReLu as activation function, initiated weight by variance scaling initializer, and softmax in the output layer.  This neural network model #2 finally achieved both goals of efficiency and accuracy in the Computer versus Human gomoku game. 
 
 ![model screen](https://github.com/wise-monk123/Reinforcement-Learning-Gomoku/blob/master/Executive.png)
@@ -47,7 +50,8 @@ The tic-tac-toe related models had a lot of memory and efficiency related issue 
 
 ## Purpose and Motivation
 We want to develop an application so that users can play with machines in their leisure time, and find the opponent (computer) challenging. This application should be able to make a wise  move by learning from the opponent player’s prior strategies. In addition, the application should be able to run efficiently. 
-Differentriator and Contribution
+
+## Differentriator and Contribution
 Current board game models mainly use Monte Carlo Tree Search principle, this project used max min algorithm, Q learning, and neural network (2 versions in Tensorflow) and built 4 models. The max min algorithm model is fast to run and simply uses loops to return the next move. The Q-learning model provides more flexibility by learning the opponent 's strategies, thus improved accuracy. The neural network Tensorflow model resolves Q-learning model’s table data storage inefficiency issue. The final version of neural network model improves both the efficiency and accuracy of  existing Gomoku applications. 
 
 ## Methodology
