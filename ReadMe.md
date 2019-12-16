@@ -119,4 +119,17 @@ We started from a Max Min algorithm for Gomoku, and improved the model into Q le
 
 https://colab.research.google.com/drive/1WpBhGwvIT6iTKPAigZGBosszlRURgQ6J
 
+## Reference
+
+Krizhevsky A, Sutskever I, Hinton G E. Imagenet classification with deep convolutional neural networks[C]//Advances in neural information processing systems. 2012: 1097-1105.
+Ioffe S, Szegedy C. Batch normalization: Accelerating deep net- work training by reducing internal covariate shift[J]. arXiv preprint arXiv:1502.03167, 2015. 
+
+Ruder S. An overview of gradient descent optimization algorithms[J]. arXiv preprint arXiv:1609.04747, 2016. 
+
+Knuth D E, Moore R W. An analysis of alpha-beta pruning[J]. Artificial intelligence, 1975, 6(4): 293-326. 
+
+Bengio, Yoshua, et al. ”Curriculum learning.”Proceedings of the 26th annual international conference on machine learning. ACM, 2009. 
+
+“The History of Gomoku.” Home, http://gomokuworld.com/gomoku/3.
+
 
