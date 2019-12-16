@@ -115,4 +115,8 @@ First graph is to go first again random player; the second graph is to go second
 
 We started from a Max Min algorithm for Gomoku, and improved the model into Q learning, neural network and trained these models with colab GPU. As an improvement step, we fine tuned the hyperparameter in the neural network. Please refer to the colab ipython notebook on project github. We experimented on combination battles among Min Max Algorithm, tabular reinforced learning algorithm , neural network based algorithm as well as the policy gradient approach. Min-Max algorithm can easily beat the random approach, while Q-learning player learns to play optimally against the Min-Max in less than 100 games. Afterwards, neural network model but found that when the neural network battles with Min-Max, it is either 100% draw or 100% Loss. We then fine tuned the network by experimenting on epsilon, optimizer learning rate, reward discount, win/loss/draw rewards, and used policy gradient descent to better learn the Q function. Finally we were able to achieve a noticeable improvement on the performance in this neural network version#2.
 
+## Notebook Link
+
+https://colab.research.google.com/drive/1WpBhGwvIT6iTKPAigZGBosszlRURgQ6J
+
 
