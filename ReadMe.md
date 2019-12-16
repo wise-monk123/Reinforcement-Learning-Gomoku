@@ -63,12 +63,14 @@ Secondly, in the model building stage, we have built various models by using dif
 
 Mix-Max algorithm’s baseline result leads us to use Quality learning (Q learning) to build an artificial intelligent model. Compare to Mix-Max algorithm’s reward assignment on “move” only, Q-learning assigns a reward value to a pair of move and state. The backpropagation in Q-learning has a discount factor, unlike Mix-Max algorithm’s full reward score backpropagation.
 
-<img src="https://github.com/wise-monk123/Reinforcement-Learning-Gomoku/blob/master/img/Qlearning.png" width="200">
+<img src="https://github.com/wise-monk123/Reinforcement-Learning-Gomoku/blob/master/img/Qlearning.png" width="400">
 
 To initiate the initial Q-learning score, we tried several values and plotted below graphs: 
 Initial value = 1.0
+<img src="https://github.com/wise-monk123/Reinforcement-Learning-Gomoku/blob/master/img/1.png" width="400">
 
 Initial value = 0.001 
+<img src="https://github.com/wise-monk123/Reinforcement-Learning-Gomoku/blob/master/img/0.001.png" width="400">
 
 As the above two graph shows, when a player is too optimistic (value = 1) about the first move and considers that every move will lead to a win, it takes quite a longer time (about 2000 games) to complete learning and reach the drawing stage. However, when a player is too pessimistic (value = 0.001), the player quickly learns and settles about 1000 games. Even though this small initial value might seem better, the drawback is that the pessimistic player will be satisfied with any move and learn that move when it is better than “loss” only, thus always learned the “draw” move, instead of the “winning” move. We decided to choose initial value as 0.6 since intuitively this value balance out both situations. 
  
