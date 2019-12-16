@@ -39,7 +39,7 @@ Finally, we improved the neural network model version #1 by using 2 dimensional 
 ## Background and Introduction
 Gomoku is a popular game played in many countries. The player wins by having their pieces forming a straight-line connection with the length of 5 in an 8x8 board. The connection can be either horizontal, vertical or diagonal. The player wins by having their symbol forming a connection with the length of 3. The connection can be either horizontal, vertical or diagonal. 
 
-![model screen](https://github.com/wise-monk123/Reinforcement-Learning-Gomoku/blob/master/img/Background.png)
+![model screen](https://github.com/wise-monk123/Reinforcement-Learning-Gomoku/blob/master/img/background.png)
 
 ## Problem Statement
 There are two primary gaming models existing: AlphaGo and Tic-Tac-Toe related. AlphaGo model is too complex for Gomoku, taking prolonged time to train. We faced several problems with this model, such as running GPU using pytorch causing memory issues. Besides having a physical GPU, setting up proper environments for pytorch GPU is a challenge for us. 
