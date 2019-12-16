@@ -1,10 +1,10 @@
 ## Project Title: Gomoku: an AI human vs computer game
 
 ## Team Member: 
-Jia Ma
-Ying Liu
-Yuhua He
-Yuanzhe Li
+Jia Ma,
+Ying (Laura) Liu,
+Yuhua He,
+Yuanzhe Li,
 Samuel Yang 
 
 This project is prepared for CMPE 297-99 instructed by Professor Jahan Ghofraniha.
